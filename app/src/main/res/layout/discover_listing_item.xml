@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/listing_item_rankNum"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:text="01"
+            android:background="@drawable/topmovie_list_num_normal"/>
+        <ImageView
+            android:id="@+id/listing_item_posterUrl"
+            android:layout_marginLeft="4dp"
+            android:layout_width="60dp"
+            android:layout_height="85dp"
+            android:background="@drawable/img_default_45x45"/>/>
+
+        <LinearLayout
+            android:layout_marginLeft="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/listing_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:text="疯狂的麦克斯：..."/>
+                <TextView
+                    android:id="@+id/listing_item_rating"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:layout_width="18dp"
+                    android:gravity="center"
+                    android:layout_height="18dp"
+                    android:textSize="10dp"
+                    android:text="8.0"
+                    android:background="#008000"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/listing_item_nameEn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#55000000"
+                android:text="Mad Max: Fury Road"/>
+            <TextView
+                android:id="@+id/listing_item_director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导演：乔治.米勒"/>
+            <TextView
+                android:id="@+id/listing_item_actor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主演：汤姆.哈迪：..."/>
+            <TextView
+                android:id="@+id/listing_item_releaseDater"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上映时间：2015年5月15日"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:id="@+id/listing_item_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E9EAE9"
+            android:lines="2"
+            android:textColor="#55000000"
+            android:ellipsize="end"
+            android:text="世界已崩坏，人性已殆尽..."/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

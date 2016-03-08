@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <com.guigu.mytime.home.HomeTopViewPager
+            android:id="@+id/vp_tabdetail_pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/img_default_300x200"/>
+
+        <LinearLayout
+            android:id="@+id/ll_tabdetail_point_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"/>
+
+        <FrameLayout
+            android:id="@+id/fl_search_bg"
+            android:layout_width="344dp"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="178dp"
+            android:background="@drawable/home_search_background"
+            android:backgroundTint="#bb000000"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/ll_search_home"
+            android:layout_width="340dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/home_search_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_title_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:src="@drawable/title_bar_search_zoomin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="影片/影人/影院   任你搜"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_home_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="#000000"
+                    android:clickable="false"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_scan"
+                    android:clickable="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_hint_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="正在售票"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tv_hint_ticket"
+            android:clickable="true"
+            android:drawableRight="@drawable/arrow_down"
+            android:text="北京  "
+            android:paddingRight="5dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_total_hotmovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:drawableRight="@drawable/icon_arrow_right_small"
+            android:text="共41部 "
+            android:textColor="#EE7621"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_hotplay_movie"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bbbbbb"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="即将上映 ."
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_home_going_to_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/tv_home_going_to_show"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:drawableRight="@drawable/icon_arrow_right_small"
+                android:text="36部 "
+                android:textColor="#8F8F8F"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:background="#bbbbbb"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"
+                android:text="同城影院 ."
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_samecity_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:drawableRight="@drawable/icon_arrow_right_small"
+                android:singleLine="true"
+                android:text="162 "
+                android:textColor="#8F8F8F"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divided_line"/>
+
+    <include layout="@layout/home_movie_shop_content"/>
+
+    <include layout="@layout/home_menu"/>
+
+    <include layout="@layout/divided_line"/>
+
+    <include layout="@layout/home_ad"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:id="@+id/tv_movie_store"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="时光精选"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_all_news"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:drawableRight="@drawable/icon_arrow_right_small"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="全部  "
+            android:textColor="#FC8900"
+            android:textSize="19sp"/>
+
+    </RelativeLayout>
+</LinearLayout>

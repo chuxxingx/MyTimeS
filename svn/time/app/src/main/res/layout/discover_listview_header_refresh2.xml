@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+        <TextView
+            android:id="@+id/listing_item_headname"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="2015年的日本《电影时报》...."
+            android:lines="2"
+            android:ellipsize="end"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#22000000" />
+        <TextView
+            android:id="@+id/listing_item_headsummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:ellipsize="end"
+            android:background="#22000000"
+            android:padding="5dp"
+            android:text="Time Out评50部最佳LGBT题材影片" />
+
+</LinearLayout>

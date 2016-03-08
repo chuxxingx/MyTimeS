@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:background="#ffffff">
+    <TextView
+        android:id="@+id/tv_item_top_news_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#FFB024"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="头条"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_item_top_news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:text="2015北美影市总结 总票房破历史纪录"
+        android:textColor="#999999"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_item_top_news_img1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/img_default_300x200" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tv_item_top_news_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2016-1-18 8:49:57"
+            android:textColor="#BBBBBB"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_item_top_news_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="评论 59"
+            android:textSize="13sp"
+            android:textColor="#BBBBBB"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+</LinearLayout>

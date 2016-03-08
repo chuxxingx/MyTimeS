@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:id="@+id/rl_head_dis_news"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_dis_news_head1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/iv_discover_head_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@drawable/img_default"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_head_dis"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/home_guider_bj"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/tv_head_dis_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:text="妇女违法排污可能分开那么"/>
+
+            <ImageView
+                android:id="@+id/iv_head_dis_prevue"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img_play"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_dis_news_head1"
+        android:orientation="horizontal">
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/find_fixedtop100_img0"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image1"
+                android:text="时光Top100"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/find_fixedtop100_img1"/>
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image2"
+                android:layout_marginTop="15dp"
+                android:text="华语Top100"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/find_fixedtop100_img2"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image3"
+                android:text="全球票房榜"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/tv_item_actor_list_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="#FFB024"
+        android:gravity="center"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:text="影人榜单"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_item_actor_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2015最耀眼韩国电影演员TOP10"
+        android:textSize="16sp"
+        android:layout_margin="6dp"
+        android:paddingLeft="2dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_actor_list_Memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="刘亚仁荣获第一，宋康昊，黄政民分列二三，入围十强的还有：全智贤、河正宇、崔岷植、李政宰"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:layout_marginLeft="7dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="6dp">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_item_actor_list_posterUrl1"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:background="@drawable/img_default_90x90" />
+
+            <TextView
+                android:id="@+id/iv_item_actor_list_actorName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="刘亚仁" />
+
+            <TextView
+                android:id="@+id/iv_item_actor_list_RatingOrTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/favourite_person_item_heart_new"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="85%"
+                android:textColor="#F13900" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_item_actor_list_posterUrl2"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:background="@drawable/img_default_90x90" />
+
+            <TextView
+                android:id="@+id/iv_item_actor_list_actorName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="刘亚仁" />
+
+            <TextView
+                android:id="@+id/iv_item_actor_list_RatingOrTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/favourite_person_item_heart_new"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="85%"
+                android:textColor="#F13900" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_item_actor_list_posterUrl3"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:background="@drawable/img_default_90x90" />
+
+            <TextView
+                android:id="@+id/iv_item_actor_list_actorName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="刘亚仁" />
+
+            <TextView
+                android:id="@+id/iv_item_actor_list_RatingOrTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/favourite_person_item_heart_new"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="85%"
+                android:textColor="#F13900" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

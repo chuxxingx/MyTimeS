@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.guigu.mytime.Store.bean.MyViewPager
+            android:id="@+id/vp_scroll_image"
+            android:layout_width="match_parent"
+            android:layout_height="220dp" />
+        <LinearLayout
+            android:id="@+id/ll_point_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/store_white_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_navigator0"
+            style="@style/StoreHead_navigator"
+            android:text="玩具" />
+
+        <TextView
+            android:id="@+id/tv_navigator1"
+            style="@style/StoreHead_navigator"
+            android:text="数码" />
+
+        <TextView
+            android:id="@+id/tv_navigator2"
+            style="@style/StoreHead_navigator"
+            android:text="服饰" />
+
+        <TextView
+            android:id="@+id/tv_navigator3"
+            style="@style/StoreHead_navigator"
+            android:text="家居" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/store_gray_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/store_white_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_cellA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/store_gray_bg" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_cellC1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/store_gray_bg" />
+
+                <ImageView
+                    android:id="@+id/iv_cellC0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/store_gray_bg" />
+
+        <ImageView
+            android:id="@+id/iv_cellB"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/store_gray_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="610dp">
+
+        <com.guigu.mytime.Store.warspagers.StarWarsViewPager
+            android:id="@+id/vp_star_wars"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.guigu.mytime.Store.warspagers.IndicatorHorizontalListView
+            android:id="@+id/hlv_store_starwars_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="65dp" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/store_white_bg">
+        <TextView
+            android:id="@+id/tv_more_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/more_product_bg"
+            android:clickable="true"
+            android:drawableRight="@drawable/right_mark"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:text="更多商品"
+            android:textColor="@color/store_white_bg"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+</LinearLayout>

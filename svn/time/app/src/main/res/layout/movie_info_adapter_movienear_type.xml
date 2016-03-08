@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:clickable="true"
+        android:id="@+id/tv_moviesomes_add_detials"
+        android:padding="3dp"
+        android:text="电影周边(3)"
+        android:textSize="20sp"
+        android:layout_marginRight="3dp"
+        android:drawableRight="@drawable/icon_arrow_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:id="@+id/fl_1_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_1_"
+                    android:layout_width="95dp"
+                    android:layout_height="120dp"/>
+                <ImageView
+                    android:src="@drawable/pic_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView
+                android:lines="2"
+                android:id="@+id/tv_name_1_"
+                android:text="5CM星战光剑黑色卫衣"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_price_1_"
+                android:text="￥45.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:id="@+id/fl_2_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_2_"
+                    android:layout_width="95dp"
+                    android:layout_height="120dp"/>
+                <ImageView
+                    android:src="@drawable/pic_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView
+                android:lines="2"
+                android:id="@+id/tv_name_2_"
+                android:text="5CM星战光剑黑色卫衣"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_price_2_"
+                android:text="￥45.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:id="@+id/fl_3_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_3_"
+                    android:layout_width="95dp"
+                    android:layout_height="120dp"/>
+                <ImageView
+                    android:src="@drawable/pic_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView
+                android:lines="2"
+                android:id="@+id/tv_name_3_"
+                android:text="5CM星战光剑黑色卫衣"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_price_3_"
+                android:text="￥45.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#55000000"/>
+</LinearLayout>

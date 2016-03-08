@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#33000000"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_descmovie_add_detials"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:textSize="18sp"
+            android:text="一群被电影召唤的人，汇聚到了Mtime，
+        一边享受着电影赋予这个世界的美好时光，一边孜孜不倦"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_desallcmovie_add_detials"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="一群被电影召唤的人，汇聚到了Mtime，
+            一边享受着电影赋予这个世界的美好时光，
+            一边孜孜不倦的将电影的点点滴滴汇入到网络的海洋中。
+            时光网是查询电影资讯和写影评讨论电影的地方。
+            不是免费收看和下载电影的地方。"/>
+    </FrameLayout>
+    <ImageButton
+        android:clickable="true"
+        android:id="@+id/ib_extend_textdesc_add_detials"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_expand_small_holo_light"
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#33000000"/>
+</LinearLayout>

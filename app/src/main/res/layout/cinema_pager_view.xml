@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mtime.maindetails.payticket.CinemaFragment">
+
+    <RadioGroup
+        android:id="@+id/rg_cinema_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_cinema_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@android:color/transparent"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="全部"
+            android:textColor="@drawable/selector_cinema_filter_text"
+            android:textSize="23sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="#3c3c3c" />
+
+        <RadioButton
+            android:id="@+id/rb_cinema_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@android:color/transparent"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/price_sort_default"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="价格"
+            android:textColor="@drawable/selector_cinema_filter_text"
+            android:textSize="23sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="#3c3c3c" />
+
+
+        <RadioButton
+            android:id="@+id/rb_cinema_near"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@android:color/transparent"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="附近"
+            android:textColor="@drawable/selector_cinema_filter_text"
+            android:textSize="23sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="#3c3c3c" />
+
+
+        <RadioButton
+            android:id="@+id/rb_cinema_screen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@android:color/transparent"
+            android:drawableLeft="@drawable/selector_cinema_filter_icon"
+            android:drawablePadding="0dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="筛选"
+            android:textColor="@drawable/selector_cinema_filter_text"
+            android:textSize="23sp" />
+
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/lv_cinema_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rg_cinema_choose"/>
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/iv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@anim/animation_list"/>
+
+</RelativeLayout>

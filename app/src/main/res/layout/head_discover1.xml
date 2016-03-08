@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:id="@+id/rl_head_dis_news"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_dis_news_head1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/iv_discover_head_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@drawable/img_default"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_head_dis"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/store_gay_bg"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/tv_head_dis_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:text="火箭弹，我发现敌方火箭弹！！"/>
+
+            <ImageView
+                android:id="@+id/iv_head_dis_prevue"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img_play"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

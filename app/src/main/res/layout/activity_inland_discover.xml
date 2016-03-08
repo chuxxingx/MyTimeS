@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/video_seekbar_line2">
+
+            <ImageButton
+                android:id="@+id/iv_inland_piaofang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/find_news_img_detail_top_left_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="全球票房榜"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/dis_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/actor_portfilo_year_background"
+            ></android.support.design.widget.TabLayout>
+
+        <TextView
+            android:id="@+id/tv_inland_piaofang"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/actor_portfilo_year_background"
+            android:gravity="center"
+            android:text="（1.8-1.10 单位：万人次）"
+            android:textSize="14sp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_discover_inland"
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/fl_main_loading_container"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loading_bg">
+        <ImageView
+            android:id="@+id/iv_main_loading_gif"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loading0001"/>
+    </FrameLayout>
+
+
+</FrameLayout>

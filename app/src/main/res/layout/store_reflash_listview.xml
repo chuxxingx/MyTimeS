@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/store_reflash_foot_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- 一下为下拉刷新部分 -->
+    <TextView
+        android:id="@+id/tv_reflash_tips_store"
+        android:layout_width="match_parent"
+        android:background="#B4CDCD"
+        android:layout_height="wrap_content"
+        android:text="上拉Me下一页"
+        android:textColor="#7CFC00"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/ll_reflash_store_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_reflash_arrow_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/default_ptr_flip"
+            android:rotation="180"/>
+
+        <TextView
+            android:id="@+id/tv_reflash_text_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B4CDCD"
+            android:textSize="18sp"
+            android:text="放开我刷新哦✿..."
+            android:textColor="#8EE5EE"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

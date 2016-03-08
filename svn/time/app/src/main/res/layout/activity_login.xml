@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/store_store_title_bar"
+        android:id="@+id/my_title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <include layout="@layout/login_box"
+        />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="登录"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg_blue"/>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="120dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/login_weibo_icon"
+            android:id="@+id/ib_weibo_login"/>
+
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/login_qq_icon"
+            android:id="@+id/ib_qq_login"/>
+
+    </LinearLayout>
+
+</LinearLayout>

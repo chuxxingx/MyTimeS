@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="245dp"
+    android:id="@+id/rl_head_dis_news"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_dis_news_head1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/iv_discover_head_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@drawable/img_default"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_head_dis"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#55000000"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/tv_head_dis_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:text="从仓位测算出的曾多次受挫"/>
+
+            <ImageView
+                android:id="@+id/iv_head_dis_prevue"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img_play"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/rl_dis_news_head1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:id="@+id/ll_dis_item_inland"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/icon_find_mainland"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内地票房榜"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:textColor="#66ff0000"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="45dp"
+            android:background="#55000000"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ll_dis__item_global"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/icon_find_globle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内地票房榜"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:textColor="#5683CC"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

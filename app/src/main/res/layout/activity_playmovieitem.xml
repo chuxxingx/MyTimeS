@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="@android:color/holo_blue_light"
+        android:id="@+id/rl_title_play_movie_detials"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 七个字符-->
+        <TextView
+            android:id="@+id/tv__namepaly_movie_details_buyticket"
+            android:text="星球大战"
+            android:textSize="21sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/ib_back_movie_details_buyticket"
+            android:padding="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/btn_gray_pre"/>
+
+        <ImageButton
+            android:layout_marginRight="10dp"
+            android:id="@+id/share_paly_movie_details_buyticket"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/preferential_share"/>
+        <ImageButton
+            android:id="@+id/favorite_paly_movie_details_buyticket"
+            android:layout_toLeftOf="@id/share_paly_movie_details_buyticket"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/icon_my_home_favorites_45x45"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_playing_movie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:background="#dbdbdb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_buyticket_play_movie_item"
+            android:layout_alignParentBottom="true"
+            android:text="查票讯/购票"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:background="@drawable/bt_big_orange"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+    </FrameLayout>
+</LinearLayout>

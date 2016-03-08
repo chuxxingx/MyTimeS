@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:background="@color/store_white_bg">
+
+    <ImageView
+        android:id="@+id/iv_startwars_bgimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_starwars_titleEn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Star Wars" />
+
+    <TextView
+        android:id="@+id/tv_starwars_titleCn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="i.t"
+        android:textSize="20sp" />
+
+    <com.guigu.mytime.Store.ShowAllGridView
+        android:id="@+id/gv_star_wars"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"/>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:background="#00f"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_city_buyticket"
+            android:layout_centerVertical="true"
+            android:text="北京"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/rate_down"/>
+        <LinearLayout
+            android:background="@drawable/title_bar_movie_cinema_switch_view_background"
+
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:enabled="false"
+                android:id="@+id/btn_title_movie_buyticket"
+                android:layout_weight="1"
+                android:text="电影"
+                android:textColor="#00f"
+                android:textSize="20sp"
+                android:background="@drawable/title_bar_movie_selected"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_title_cinema_buyticket"
+                android:text="影院"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/ib_rearch_buyticket"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_bar_search_zoomin"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <com.guigu.mytime.buyticket.view.MyViewPager
+        android:id="@+id/vp_content_buyticket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

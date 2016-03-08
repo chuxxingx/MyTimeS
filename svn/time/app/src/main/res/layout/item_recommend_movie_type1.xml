@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffffff"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tv_item_recommend_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFB024"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="佳片有约"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_item_recommend_ch_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《超新约全书》2015"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_item_recommend_en_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Le tout nouveau testament"
+            android:textColor="#9b9b9b"
+            android:textSize="15sp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:id="@+id/tv_item_recommend_content"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="3"
+            android:maxEms="15"
+            android:text="上帝住在布鲁塞尔，是个怪大叔，有个熊孩子女儿......一边亵渎，一边治愈，这才是真正的城市"
+            android:textColor="#5C6164"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_item_recommend_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_default"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

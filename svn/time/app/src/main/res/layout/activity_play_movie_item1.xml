@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guigu.mytime.buyticket.activity.PlayMovieItemActivity1">
+    <RelativeLayout
+        android:background="@android:color/holo_blue_light"
+        android:id="@+id/rl_title_play_movie_detials"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 七个字符-->
+        <TextView
+            android:id="@+id/tv_namepaly_movie_details_buyticket"
+            android:text="星球大战"
+            android:textSize="21sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/ib_back_movie_details_buyticket"
+            android:padding="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/btn_gray_pre"/>
+
+        <ImageButton
+            android:layout_marginRight="10dp"
+            android:id="@+id/share_paly_movie_details_buyticket"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/preferential_share"/>
+        <ImageButton
+            android:id="@+id/favorite_paly_movie_details_buyticket"
+            android:layout_toLeftOf="@id/share_paly_movie_details_buyticket"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/icon_my_home_favorites_45x45"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/rl_title_play_movie_detials"
+        android:id="@+id/rcy_play_movie_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

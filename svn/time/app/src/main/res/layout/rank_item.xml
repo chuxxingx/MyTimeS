@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <TextView
+        android:id="@+id/tv1_rank_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="5dp"
+        android:text="各位给我个废物"
+        android:textColor="@drawable/tecolor_paihan_item_selector"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv2_rank_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:maxEms="20"
+        android:layout_below="@id/tv1_rank_item"
+        android:padding="5dp"
+        android:ellipsize="end"
+        android:text="各位给我个废物"
+        android:textColor="#55000000"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/icon_arrow_right_small" />
+</RelativeLayout>

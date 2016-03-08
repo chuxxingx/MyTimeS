@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="200dp"
+    android:padding="3dp">
+    <View
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/darker_gray"
+        android:layout_width="2dp"
+        android:layout_height="156dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_day_rcywillshow_item"
+                android:padding="2dp"
+                android:textSize="16sp"
+                android:text="1月22日"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@android:color/darker_gray"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_icon_rcywillshow_item"
+                android:background="@drawable/lead_bg1"
+                android:layout_width="90dp"
+                android:layout_height="140dp" />
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_name_rcywillshow_item"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:text="云中行走"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#fae908"
+                        android:layout_marginTop="7dp"
+                        android:id="@+id/tv_type_count_rcywillshow_item"
+                        android:padding="2dp"
+                        android:textSize="12sp"
+                        android:text="1541"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:maxLines="1"
+                        android:layout_marginTop="7dp"
+                        android:id="@+id/tv_type_rcywillshow_item"
+                        android:padding="2dp"
+                        android:textSize="12sp"
+                        android:text="人先看-冒险"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView
+                    android:maxLines="1"
+                    android:id="@+id/tv_director_rcywillshow_item"
+                    android:padding="2dp"
+                    android:textSize="12sp"
+                    android:text="导演，冯小刚"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:maxLines="1"
+                    android:id="@+id/tv_actor_rcywillshow_item"
+                    android:padding="2dp"
+                    android:textSize="12sp"
+                    android:text="阿三"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="3dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:padding="2dp"
+                        android:id="@+id/btn_prebuy_rcy_willshow_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="75dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/home_button_movie"
+                        android:text="超前预售"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_movie_rcy_willshow_item"
+                        android:layout_width="75dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/register_get_signcode_icon"
+                        android:text="预告片"
+                        android:textColor="#008000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

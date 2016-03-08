@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.guigu.mytime.view.MyMainViewPager
+        android:id="@+id/viewpager_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f6f6"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/radio_button"
+            android:background="@drawable/rb_selector_home"
+            android:text="首页"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/rb_buyticket"
+            style="@style/radio_button"
+            android:background="@drawable/rb_selector_buyticket"
+            android:text="购票"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/rb_store"
+            style="@style/radio_button"
+            android:background="@drawable/rb_selector_shop"
+            android:text="商城"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/rb_discover"
+            style="@style/radio_button"
+            android:background="@drawable/rb_selector_discover"
+            android:text="发现"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            style="@style/radio_button"
+            android:background="@drawable/rb_selector_my"
+            android:text="我的"
+            android:textColor="#000000"/>
+    </RadioGroup>
+</LinearLayout>

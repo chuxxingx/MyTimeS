@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/iv_dis_newsitem"
+        android:layout_width="85dip"
+        android:layout_height="95dp"
+        android:layout_centerVertical="true"
+        android:padding="1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_default" />
+
+    <TextView
+        android:id="@+id/tv_dis_newsitem_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_dis_newsitem"
+        android:text="的刚刚我各位"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_dis_newsitem_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dis_newsitem_title1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_dis_newsitem"
+        android:text="标题2内容"
+        android:textColor="#88000000" />
+
+    <TextView
+        android:id="@+id/tv_long_dis_listitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dis_newsitem_title2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_dis_newsitem"
+        android:text="1999-09-09"
+        android:textColor="#88000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_discuss_dis_listitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dis_newsitem_title2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_long_dis_listitem"
+        android:text="评论: 2条"
+        android:textColor="#88000000"
+        android:textSize="14sp" />
+
+</RelativeLayout>
